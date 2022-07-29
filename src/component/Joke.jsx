@@ -1,4 +1,4 @@
-
+import './joke.css'
 
 export default function Joke(props) {
     return (

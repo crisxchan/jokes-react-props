@@ -1,0 +1,24 @@
+#joke {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #222;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px #6A6A6A;
+    display: flex;
+    flex-direction: column;
+    transition: 200ms ease-in-out;
+}
+
+#joke:hover {
+    box-shadow: 0px 15px 15px #6A6A6A;
+}
+
+#setup {
+    font-weight: 400;
+    height: 50%;
+}
+
+#punchline {
+    height: 50%;
+}
