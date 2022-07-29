@@ -1,11 +1,27 @@
 import Joke from './component/Joke'
+import jokesData from './jokesData'
 import './App.css'
 
 function App() {
+  const jokeElements = jokesData.map((joke, i) => {
+    return <Joke 
+      key = {i++}
+      setup = {joke.setup}
+      punchline = {joke.punchline}
+    />
+  })
 
   return (
     <>
-      <Joke 
+      {jokeElements}
+    </>
+  )
+}
+
+export default App
+
+
+{/* <Joke 
         punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally." 
       />
       <Joke
@@ -27,9 +43,4 @@ function App() {
       <Joke
         setup = "What's the best thing about Switzerland?"
         punchline= "I don't know, but the flag is a big plus!"
-      />
-    </>
-  )
-}
-
-export default App
+      /> */}
