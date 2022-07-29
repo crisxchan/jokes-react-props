@@ -12,6 +12,7 @@
 
 #joke:hover {
     box-shadow: 0px 15px 15px #6A6A6A;
+    transform: scale(1.05);
 }
 
 #setup {
