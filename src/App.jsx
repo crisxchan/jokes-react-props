@@ -11,8 +11,6 @@ export default function App() {
     />
   )
 
-  console.log(jokeElements)
-
   return (
     <>
       {jokeElements}
